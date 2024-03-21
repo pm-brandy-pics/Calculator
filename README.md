@@ -1,1 +1,1 @@
-Simple calculator C++ project
+Simple calculator projects using C++, HTML, JavaScript and Python.
