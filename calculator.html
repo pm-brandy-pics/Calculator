@@ -1,0 +1,53 @@
+<html>
+<head>
+<script language="javascript">
+function add()
+{
+var num1=parseFloat(document.calc.num1.value);
+var num2=parseFloat(document.calc.num2.value);
+document.calc.result.value=num1+num2;
+}
+function subtract()
+{
+var num1=parseFloat(document.calc.num1.value);
+var num2=parseFloat(document.calc.num2.value);
+document.calc.result.value=num1-num2;
+}
+function multiply()
+{
+var num1=parseFloat(document.calc.num1.value);
+var num2=parseFloat(document.calc.num2.value);
+document.calc.result.value=num1*num2;
+}
+function divide()
+{
+var num1=parseFloat(document.calc.num1.value);
+var num2=parseFloat(document.calc.num2.value);
+if(num2==0)
+{
+window.alert("Cannot divide by 0");
+document.calc.num2.value="";
+}
+else
+document.calc.result.value=num1/num2;
+}
+</script>
+</head>
+<body>
+<h1 style="colour:blue">CALCULATOR</h1>
+<form name="calc">
+<fieldset>
+<legend>Calculate</legend>
+Num1:<input type="text" size="5" name="num1"/>
+Num2:<input type="text" size="5" name="num2"/>
+<input type="button" value="+" onclick="add()"/>
+<input type="button" value="-" onclick="subtract()"/>
+<input type="button" value="*" onclick="multiply()"/>
+<input type="button" value="/" onclick="divide()"/>
+<input type="reset" value="Clear"/>
+<input type="text" size=10 name="result"/>
+</fieldset>
+</form>
+</body>
+</html>
+
